@@ -14,6 +14,7 @@
 		9B298E0A22BBA2CA00E09578 /* MyLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B298E0922BBA2CA00E09578 /* MyLibrary.swift */; };
 		9B298E0C22BBA53400E09578 /* UserLoginAPIParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B298E0B22BBA53400E09578 /* UserLoginAPIParser.swift */; };
 		9B298E0E22BBA55300E09578 /* EventListAPIParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B298E0D22BBA55300E09578 /* EventListAPIParser.swift */; };
+		9B298E1022BBB5B700E09578 /* EventsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B298E0F22BBB5B700E09578 /* EventsListViewModel.swift */; };
 		B63D244622BABF4A00D0D31C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63D244522BABF4A00D0D31C /* AppDelegate.swift */; };
 		B63D244B22BABF4A00D0D31C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B63D244922BABF4A00D0D31C /* Main.storyboard */; };
 		B63D244D22BABF4B00D0D31C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B63D244C22BABF4B00D0D31C /* Assets.xcassets */; };
@@ -28,6 +29,7 @@
 		9B298E0922BBA2CA00E09578 /* MyLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLibrary.swift; sourceTree = "<group>"; };
 		9B298E0B22BBA53400E09578 /* UserLoginAPIParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLoginAPIParser.swift; sourceTree = "<group>"; };
 		9B298E0D22BBA55300E09578 /* EventListAPIParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListAPIParser.swift; sourceTree = "<group>"; };
+		9B298E0F22BBB5B700E09578 /* EventsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsListViewModel.swift; sourceTree = "<group>"; };
 		B63D244222BABF4A00D0D31C /* EMSAT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EMSAT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B63D244522BABF4A00D0D31C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B63D244A22BABF4A00D0D31C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 			children = (
 				B63D244522BABF4A00D0D31C /* AppDelegate.swift */,
 				9B298DFE22BB3D6000E09578 /* EventsListVC.swift */,
+				9B298E0F22BBB5B700E09578 /* EventsListViewModel.swift */,
 				9B298E0022BB3D8600E09578 /* MapVC.swift */,
 				9B298E0822BBA2B300E09578 /* Class Files */,
 				9B298E0222BB9EB700E09578 /* Model */,
@@ -180,6 +183,7 @@
 				9B298E0E22BBA55300E09578 /* EventListAPIParser.swift in Sources */,
 				9B298E0522BB9EDE00E09578 /* UserLoginModel.swift in Sources */,
 				9B298DFF22BB3D6000E09578 /* EventsListVC.swift in Sources */,
+				9B298E1022BBB5B700E09578 /* EventsListViewModel.swift in Sources */,
 				9B298E0122BB3D8600E09578 /* MapVC.swift in Sources */,
 				9B298E0722BB9EFF00E09578 /* EventListModel.swift in Sources */,
 				9B298E0C22BBA53400E09578 /* UserLoginAPIParser.swift in Sources */,

@@ -22,6 +22,11 @@ class EventListAPIParser: NSObject {
             let strURL = MyLibrary.shared.apiURL(for: .StoredGetEventListURL)
             
             request = URLRequest(url: URL(string:strURL)!, cachePolicy: .reloadIgnoringLocalAndRemoteCacheData, timeoutInterval: 60)
+            request.addValue("en", forHTTPHeaderField: "X-localization")
+            request.addValue("IOS", forHTTPHeaderField: "X-platform")
+            request.addValue("5.0", forHTTPHeaderField: "X-OSVersion")
+            request.addValue("Google Pixel", forHTTPHeaderField: "X-device")
+            request.addValue("1.0", forHTTPHeaderField: "X-appVersion")
             request.addValue("application/json", forHTTPHeaderField: "Content-Type")
             request.httpMethod = "POST"
             request.httpBody = data
