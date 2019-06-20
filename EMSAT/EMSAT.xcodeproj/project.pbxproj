@@ -7,17 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B298DFF22BB3D6000E09578 /* EventsListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B298DFE22BB3D6000E09578 /* EventsListVC.swift */; };
+		9B298E0122BB3D8600E09578 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B298E0022BB3D8600E09578 /* MapVC.swift */; };
+		9B298E0522BB9EDE00E09578 /* UserLoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B298E0422BB9EDE00E09578 /* UserLoginModel.swift */; };
+		9B298E0722BB9EFF00E09578 /* EventListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B298E0622BB9EFF00E09578 /* EventListModel.swift */; };
+		9B298E0A22BBA2CA00E09578 /* MyLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B298E0922BBA2CA00E09578 /* MyLibrary.swift */; };
+		9B298E0C22BBA53400E09578 /* UserLoginAPIParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B298E0B22BBA53400E09578 /* UserLoginAPIParser.swift */; };
+		9B298E0E22BBA55300E09578 /* EventListAPIParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B298E0D22BBA55300E09578 /* EventListAPIParser.swift */; };
 		B63D244622BABF4A00D0D31C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63D244522BABF4A00D0D31C /* AppDelegate.swift */; };
-		B63D244822BABF4A00D0D31C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63D244722BABF4A00D0D31C /* ViewController.swift */; };
 		B63D244B22BABF4A00D0D31C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B63D244922BABF4A00D0D31C /* Main.storyboard */; };
 		B63D244D22BABF4B00D0D31C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B63D244C22BABF4B00D0D31C /* Assets.xcassets */; };
 		B63D245022BABF4B00D0D31C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B63D244E22BABF4B00D0D31C /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9B298DFE22BB3D6000E09578 /* EventsListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsListVC.swift; sourceTree = "<group>"; };
+		9B298E0022BB3D8600E09578 /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
+		9B298E0422BB9EDE00E09578 /* UserLoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLoginModel.swift; sourceTree = "<group>"; };
+		9B298E0622BB9EFF00E09578 /* EventListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListModel.swift; sourceTree = "<group>"; };
+		9B298E0922BBA2CA00E09578 /* MyLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLibrary.swift; sourceTree = "<group>"; };
+		9B298E0B22BBA53400E09578 /* UserLoginAPIParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLoginAPIParser.swift; sourceTree = "<group>"; };
+		9B298E0D22BBA55300E09578 /* EventListAPIParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListAPIParser.swift; sourceTree = "<group>"; };
 		B63D244222BABF4A00D0D31C /* EMSAT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EMSAT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B63D244522BABF4A00D0D31C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B63D244722BABF4A00D0D31C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B63D244A22BABF4A00D0D31C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B63D244C22BABF4B00D0D31C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B63D244F22BABF4B00D0D31C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -35,6 +47,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9B298E0222BB9EB700E09578 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9B298E0422BB9EDE00E09578 /* UserLoginModel.swift */,
+				9B298E0622BB9EFF00E09578 /* EventListModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9B298E0322BB9EB700E09578 /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				9B298E0B22BBA53400E09578 /* UserLoginAPIParser.swift */,
+				9B298E0D22BBA55300E09578 /* EventListAPIParser.swift */,
+			);
+			path = Parser;
+			sourceTree = "<group>";
+		};
+		9B298E0822BBA2B300E09578 /* Class Files */ = {
+			isa = PBXGroup;
+			children = (
+				9B298E0922BBA2CA00E09578 /* MyLibrary.swift */,
+			);
+			path = "Class Files";
+			sourceTree = "<group>";
+		};
 		B63D243922BABF4A00D0D31C = {
 			isa = PBXGroup;
 			children = (
@@ -55,7 +93,11 @@
 			isa = PBXGroup;
 			children = (
 				B63D244522BABF4A00D0D31C /* AppDelegate.swift */,
-				B63D244722BABF4A00D0D31C /* ViewController.swift */,
+				9B298DFE22BB3D6000E09578 /* EventsListVC.swift */,
+				9B298E0022BB3D8600E09578 /* MapVC.swift */,
+				9B298E0822BBA2B300E09578 /* Class Files */,
+				9B298E0222BB9EB700E09578 /* Model */,
+				9B298E0322BB9EB700E09578 /* Parser */,
 				B63D244922BABF4A00D0D31C /* Main.storyboard */,
 				B63D244C22BABF4B00D0D31C /* Assets.xcassets */,
 				B63D244E22BABF4B00D0D31C /* LaunchScreen.storyboard */,
@@ -135,8 +177,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B63D244822BABF4A00D0D31C /* ViewController.swift in Sources */,
+				9B298E0E22BBA55300E09578 /* EventListAPIParser.swift in Sources */,
+				9B298E0522BB9EDE00E09578 /* UserLoginModel.swift in Sources */,
+				9B298DFF22BB3D6000E09578 /* EventsListVC.swift in Sources */,
+				9B298E0122BB3D8600E09578 /* MapVC.swift in Sources */,
+				9B298E0722BB9EFF00E09578 /* EventListModel.swift in Sources */,
+				9B298E0C22BBA53400E09578 /* UserLoginAPIParser.swift in Sources */,
 				B63D244622BABF4A00D0D31C /* AppDelegate.swift in Sources */,
+				9B298E0A22BBA2CA00E09578 /* MyLibrary.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,7 +261,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -268,7 +316,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -282,14 +330,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = EMSAT/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.avinay.EMSAT;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -299,14 +351,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = EMSAT/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.avinay.EMSAT;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
