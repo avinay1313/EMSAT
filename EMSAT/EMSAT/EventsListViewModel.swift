@@ -10,7 +10,8 @@ import UIKit
 
 /// Protocols for communication between Model & ViewController
 protocol EventsListViewModelDelegate {
-    func reloadTable()
+    func reloadTable(status:Bool)
+    func openCustomPopup(sender: UIButton)
 }
 
 class EventsListViewModel: NSObject {
@@ -19,6 +20,7 @@ class EventsListViewModel: NSObject {
     var intPage = 1
     var userData: UserData!
     var arrEventList = [EventList]()
+    var strTypeValue = ""
     
     var delegate:EventsListViewModelDelegate!
     
@@ -48,10 +50,18 @@ class EventsListViewModel: NSObject {
                             for list in eventList {
                                 self.arrEventList.append(list)
                             }
-                            self.delegate.reloadTable()
+                            self.delegate.reloadTable(status: true)
+                        }else{
+                            self.delegate.reloadTable(status: false)
                         }
+                    }else{
+                        self.delegate.reloadTable(status: false)
                     }
+                }else{
+                    self.delegate.reloadTable(status: false)
                 }
+            }else{
+                self.delegate.reloadTable(status: false)
             }
         }
     }
@@ -64,21 +74,51 @@ class EventsListViewModel: NSObject {
     func populate(cell:EventListCell,at indexPath:IndexPath){
         let eventList = arrEventList[indexPath.row]
         
+        cell.selectionStyle = .none
         cell.lblTitle.text = eventList.title
         cell.lblLocation.text = eventList.location
-        cell.lblDate.text = eventList.date
-        cell.lblTime.text = "\(eventList.from_time) : \(eventList.to_time)"
-        cell.lblType.text = eventList.type
         
+        let dateFormate = DateFormatter()
+        dateFormate.dateFormat = "yyyy-mm-dd"
+        
+        if let date = dateFormate.date(from: eventList.date){
+            dateFormate.dateFormat = "dd,MMM yyyy"
+            let strDate = dateFormate.string(from: date)
+            cell.lblDate.text = strDate
+        }
+        var strFromTime = ""
+        var strToTime = ""
+        dateFormate.dateFormat = "HH:mm"
+        if let date = dateFormate.date(from: eventList.from_time){
+            dateFormate.dateFormat = "hh:mm a"
+            let strTime = dateFormate.string(from: date)
+            strFromTime = strTime
+        }
+        dateFormate.dateFormat = "HH:mm"
+        if let date = dateFormate.date(from: eventList.to_time){
+            dateFormate.dateFormat = "hh:mm a"
+            let strTime = dateFormate.string(from: date)
+            strToTime = strTime
+        }
+        cell.lblTime.text = "\(strFromTime) : \(strToTime)"
+        if strTypeValue.count == 0{
+            cell.lblType.text = eventList.type
+        }else{
+            cell.lblType.text = strTypeValue
+        }
         cell.viewType.layer.cornerRadius = 5.0
         cell.viewType.layer.borderWidth = 1.0
         cell.viewType.layer.borderColor = UIColor.darkGray.cgColor
         cell.viewType.clipsToBounds = true
-        
-//        if indexPath.row == arrEventList.count - 1 {
-//            self.intPage = self.intPage + 1
-//            self.callEventListAPI(self.userData)
-//        }
+        cell.btnAction.tag = indexPath.row
+        cell.btnAction.addTarget(self, action: #selector(showList(sender:)), for: .touchUpInside)
     }
-
+    func loadMore() {
+        self.intPage = self.intPage + 1
+        self.callEventListAPI(self.userData)
+    }
+    @objc func showList(sender:UIButton){
+        print("Action Button")
+        delegate.openCustomPopup(sender: sender)
+    }
 }

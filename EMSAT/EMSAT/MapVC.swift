@@ -10,14 +10,13 @@ import UIKit
 import MapKit
 
 class MapVC: UIViewController, UIGestureRecognizerDelegate {
-
+    
     @IBOutlet weak var mapView: MKMapView!
     
     var arrAnnotation = [MKPointAnnotation]()
     var locationManager: CLLocationManager!
     
     lazy var geocoder = CLGeocoder()
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,22 +25,18 @@ class MapVC: UIViewController, UIGestureRecognizerDelegate {
         let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(handleTap(gestureReconizer:)))
         gestureRecognizer.delegate = self
         mapView.addGestureRecognizer(gestureRecognizer)
-
-        // Do any additional setup after loading the view.
         
-        let location = CLLocationCoordinate2D(latitude: 51.50007773,
-                                              longitude: -0.1246402)
+        let location = CLLocationCoordinate2D(latitude: 23.0392467,
+                                              longitude: 72.5123253)
         
-        // 2
         let span = MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)
         let region = MKCoordinateRegion(center: location, span: span)
         mapView.setRegion(region, animated: true)
         
-        //3
         let annotation = MKPointAnnotation()
         annotation.coordinate = location
-        annotation.title = "Big Ben"
-        annotation.subtitle = "London"
+        annotation.title = "Friends Avenue"
+        annotation.subtitle = "Ahmedabad, India"
         mapView.addAnnotation(annotation)
     }
     
@@ -60,6 +55,7 @@ class MapVC: UIViewController, UIGestureRecognizerDelegate {
         let newCoordinate: CLLocationCoordinate2D = mapView.convert(touchPoint, toCoordinateFrom: mapView)
         addAnnotationOnLocation(pointedCoordinate: newCoordinate)
     }
+    
     func addAnnotationOnLocation(pointedCoordinate: CLLocationCoordinate2D) {
         let annotation = MKPointAnnotation()
         self.removeAllAnnotationFromMapView()
@@ -96,6 +92,7 @@ class MapVC: UIViewController, UIGestureRecognizerDelegate {
             mapView.removeAnnotation(annotation)
         }
     }
+    
     func showCurrentLocationOnMapview(location:CLLocation!){
         let span = MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)
         let region = MKCoordinateRegion(center: location.coordinate, span: span)
@@ -141,10 +138,8 @@ extension CLPlacemark {
             }
             return result
         }
-        
         return nil
     }
-    
 }
 
 extension MapVC:CLLocationManagerDelegate{
@@ -154,5 +149,4 @@ extension MapVC:CLLocationManagerDelegate{
             locationManager.stopUpdatingHeading()
         }
     }
-    
 }

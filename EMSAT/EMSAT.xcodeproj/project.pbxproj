@@ -16,6 +16,7 @@
 		9B298E0E22BBA55300E09578 /* EventListAPIParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B298E0D22BBA55300E09578 /* EventListAPIParser.swift */; };
 		9B298E1022BBB5B700E09578 /* EventsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B298E0F22BBB5B700E09578 /* EventsListViewModel.swift */; };
 		9B53379522BC8EF00063D6B3 /* EventListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B53379422BC8EF00063D6B3 /* EventListCell.swift */; };
+		9B53379722BCE8190063D6B3 /* CustomViewPopupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B53379622BCE8190063D6B3 /* CustomViewPopupVC.swift */; };
 		B63D244622BABF4A00D0D31C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63D244522BABF4A00D0D31C /* AppDelegate.swift */; };
 		B63D244B22BABF4A00D0D31C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B63D244922BABF4A00D0D31C /* Main.storyboard */; };
 		B63D244D22BABF4B00D0D31C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B63D244C22BABF4B00D0D31C /* Assets.xcassets */; };
@@ -32,6 +33,7 @@
 		9B298E0D22BBA55300E09578 /* EventListAPIParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListAPIParser.swift; sourceTree = "<group>"; };
 		9B298E0F22BBB5B700E09578 /* EventsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsListViewModel.swift; sourceTree = "<group>"; };
 		9B53379422BC8EF00063D6B3 /* EventListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListCell.swift; sourceTree = "<group>"; };
+		9B53379622BCE8190063D6B3 /* CustomViewPopupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewPopupVC.swift; sourceTree = "<group>"; };
 		B63D244222BABF4A00D0D31C /* EMSAT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EMSAT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B63D244522BABF4A00D0D31C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B63D244A22BABF4A00D0D31C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 				9B298E0F22BBB5B700E09578 /* EventsListViewModel.swift */,
 				9B53379422BC8EF00063D6B3 /* EventListCell.swift */,
 				9B298E0022BB3D8600E09578 /* MapVC.swift */,
+				9B53379622BCE8190063D6B3 /* CustomViewPopupVC.swift */,
 				9B298E0822BBA2B300E09578 /* Class Files */,
 				9B298E0222BB9EB700E09578 /* Model */,
 				9B298E0322BB9EB700E09578 /* Parser */,
@@ -188,6 +191,7 @@
 				9B298DFF22BB3D6000E09578 /* EventsListVC.swift in Sources */,
 				9B298E1022BBB5B700E09578 /* EventsListViewModel.swift in Sources */,
 				9B298E0122BB3D8600E09578 /* MapVC.swift in Sources */,
+				9B53379722BCE8190063D6B3 /* CustomViewPopupVC.swift in Sources */,
 				9B298E0722BB9EFF00E09578 /* EventListModel.swift in Sources */,
 				9B298E0C22BBA53400E09578 /* UserLoginAPIParser.swift in Sources */,
 				B63D244622BABF4A00D0D31C /* AppDelegate.swift in Sources */,
@@ -339,17 +343,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = V2REPBC399;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = EMSAT/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.vsourz.demoapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.avinay.EMSAT;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "Vsourz DemoApp Development";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -360,17 +364,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = V2REPBC399;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = EMSAT/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.vsourz.demoapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.avinay.EMSAT;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "Vsourz DemoApp Development";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

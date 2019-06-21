@@ -16,6 +16,7 @@ class EventListCell: UITableViewCell {
     @IBOutlet var lblTime: UILabel!
     @IBOutlet var viewType: UIView!
     @IBOutlet var lblType: UILabel!
+    @IBOutlet var btnAction: UIButton!
 
     override func awakeFromNib() {
         super.awakeFromNib()
